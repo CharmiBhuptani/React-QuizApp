@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Courgette&family=Neucha&family=Satisfy&display=swap");
+@import "./constants.scss";
+:root {
+  --btn-color: #ff9500;
+  --option-color: #42497f;
+}
+
+body {
+  background-color: #1c262e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  #root {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    height: 50px;
+  }
+}
+
+.btn {
+  background-color: var(--btn-color);
+  padding: 12px 24px;
+  border-radius: 16px;
+  margin: auto 10px;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #ff950080;
+  }
+}
+
+.homepage {
+  color: white;
+
+  .logo {
+    img {
+      height: 150px;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+    height: 60vh;
+    flex-wrap: wrap;
+
+    .textContent {
+      font-weight: bolder;
+
+      .funTitle {
+        font-size: 30px;
+      }
+
+      .start {
+        margin: 40px auto;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .image {
+      margin: auto 10px;
+
+      img {
+        height: 350px;
+      }
+    }
+  }
+}
+.question {
+  padding: 10px 0px 10px 5px;
+  color: white;
+  font-size: 30px;
+  font-family: "Satisfy", cursive;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+.questionContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  @media screen and #{$break-xs} {
+    height: 67vh;
+  }
+
+  .questionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and #{$break-xs} {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 5rem;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[type="radio"]:checked + label {
+      background-color: var(--btn-color);
+    }
+
+    .options {
+      margin: 10px 0px;
+      padding: 14px;
+      background-color: var(--option-color);
+      color: white;
+      font-size: 16px;
+      border-radius: 20px;
+      display: inline-block;
+      width: 250px;
+
+      &:hover {
+        background-color: white;
+        color: var(--option-color);
+      }
+    }
+
+    .current {
+      background-color: white !important;
+      color: black;
+    }
+
+    .correct {
+      background-color: #adff2f;
+      color: black;
+    }
+  }
+
+  .questionImg {
+    img {
+      height: 350px;
+    }
+    @media screen and #{$break-xs} {
+      display: none;
+    }
+  }
+}
+
+.scorepage {
+  color: white;
+
+  .scoreContent {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;      
+    
+    @media screen and #{$break-xs} {
+      flex-direction: column;
+    }
+
+    .scoreBox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: auto 50px;
+      background-color: #23333f;
+      border: 4px solid var(--btn-color);
+      // width: 400px;
+      // height: 300px;
+      font-size: 25px;
+      word-spacing: 5px;
+      text-transform: uppercase;
+      font-family: "Carter One", cursive;
+
+      p {
+        margin: 10px;
+      }
+
+      @media screen and #{$break-xs} {
+        p {
+          text-align: center;
+          margin: 0;
+        }
+      }
+
+      .scores {
+        font-weight: bold;
+        color: var(--btn-color);
+      }
+    }
+
+    .scoreImg {
+      margin: auto 50px;
+
+      img {
+        width: 350px;
+        @media screen and #{$break-xs} {
+          margin-top: 5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+
+  .btnHome {
+    background: none;
+    border: none;
+  }
+}
+
+.status {
+  position: relative;
+  bottom: -30px;
+  right: 0;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+
+  .statusBar {
+    background-color: var(--btn-color);
+    height: inherit;
+    display: block;
+  }
+}
+
+.question-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+
+  .rank {
+    padding: 0;
+  }
+
+  .score {
+    color: #00803b;
+    font-family: unset;
+    font-size: 28px;
+    padding-right: 3px;
+  }
+
+  .timer {
+    color: red;
+    font-family: monospace;
+    font-size: 28px;
+  }
+
+  sec {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+  }
+}

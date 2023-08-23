@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "category": "food",
+        "question": "What was the first soft drink in space?",
+        "answer": "Coca Cola",
+        "option": [
+            "Sprite",
+            "Coca Cola",
+            "Fanta",
+            "Pepsi"
+        ]
+    },
+    {
+        "id": 2,
+        "category": "gk",
+        "question": "Which monarch officially made Valentine's Day a holiday in 1537?",
+        "answer": "Henry",
+        "option": [
+            "Wesley",
+            "Henry",
+            "Dean",
+            "Edward"
+        ] 
+        
+    },
+    {
+        "id": 3,
+        "category": "entertainment",
+        "question": "What position does Harry play on the Quidditch team?",
+        "answer": "Seeker",
+        "option": [
+            "Finder",
+            "Keeper",
+            "Chaser",
+            "Seeker"
+        ]
+    },
+    {
+        "id": 4,
+        "category": "gk",
+        "question": "What's the smallest country in the world?",
+        "answer": "Vatican City",
+        "option": [
+            "Hobart",
+            "Bolzano",
+            "Vatican City",
+            "Lausanne"
+        ]
+    },
+    {
+        "id": 5,
+        "category": "music",
+        "question": "The biggest selling music single of all time is?",
+        "answer": "Candle in the Wind",
+        "option": [
+            "I'll Be Missing You",
+            "Hypnotize",
+            "Candle in the Wind",
+            "Un-Break My Heart"
+        ]
+    },
+    {
+        "id": 6,
+        "category": "food",
+        "question": "How would you say 'house wine' in 'Italian'?",
+        "answer": "Vino Della Casa",
+        "option": [
+            "Vino Della Casa",
+            "Barbera",
+            "Cabernet Sauvignon",
+            "Syrah"
+        ]
+    },
+    {
+        "id": 7,
+        "category": "game",
+        "question": "What is another name for the card game 'Blackjack'?",
+        "answer": "21",
+        "option": [
+            "Patience",
+            "Koi-Koi",
+            "21",
+            "Go Fish"
+        ]
+    },
+    {
+        "id": 8,
+        "category": "gk",
+        "question": "What does the Greek root word 'chrom' mean?",
+        "answer": "Color",
+        "option": [
+            "Soul",
+            "Color",
+            "Sorrow",
+            "Chilled"
+        ]
+    },
+    {
+        "id": 9,
+        "category": "entertainment",
+        "question": "Who was able to pick up Thor's hammer in Endgame?",
+        "answer": "Captain America",
+        "option": [
+            "Captain America",
+            "Thor",
+            "Iron Man",
+            "Hulk"
+        ]
+    },
+    {
+        "id": 10,
+        "category": "gk",
+        "question": "What is the smallest perfect number?",
+        "answer": "6",
+        "option": [
+            "12",
+            "6",
+            "3",
+            "9"
+        ]
+    }
+]
